@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <h1>SOUMYA VERMA</h1>
+    <h2>Personal Information</h2>
+
+    <div>
+        <form action="post">
+            <label for="Full Name">Full name:</label>
+            <input type="text" id="Full Name" pattern="[A-Z a-z]+">
+    </div>
+
+    <label for="dob">Date of birth:</label>
+    <input type="datetime-local" id="Test_DatetimeLocal">
+
+    <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">Others</label>
+    </div>
+
+    <h2>Contact Information</h2>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div>
+        <label for="number">Phone number:</label>
+        <input type="number" id="number">
+    </div>
+    <div>
+        <label for="address">Address:</label>
+        <br>
+        <textarea id="address" name="address" rows="4" cols="40"></textarea>
+    </div>
+
+    <h2>Education</h2>
+    <div>
+        <label for="Highest Degree">Highest Degree</label>
+        <select name="Highest Degree">
+            <option value="High School">High School</option>
+            <option value="Bachelor's">Bachelor's</option>
+            <option value="Master's">Master's</option>
+            <option value="Ph.D.">Ph.D.</option>
+        </select>
+    </div>
+    <div>
+        <label for="field of study">Field of Study:</label>
+        <input type="text" pattern="[A-Za-z]+">
+    </div>
+
+    <h2>Work Experience</h2>
+    <div>
+        <label for="Job Title">Job Title:</label>
+        <input type="text" id="Job_Title" name="job_title" pattern="[A-Za-z]+">
+    </div>
+    <div>
+
+        <label for="Company Name">Company Name:</label>
+        <input type="text" id="Company_Name" name="company_name">
+
+    </div>
+
+    <div>
+
+        <label for="Years of Experience">Years of Experience:</label>
+        <input type="number" id="Years_of_Experience" name="years_of_experience">
+    </div>
+
+    <h2>Skills</h2>
+    <div>
+        <select name="skills" id="skills">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+        </select>
+    </div>
+
+    <h2>Additional Information</h2>
+    <div>
+        <label for="Profile Picture">Profile Picture:</label>
+        <input type="file" id="Profile_Picture" name="profile_picture">
+    </div>
+    <div>
+        <label for="Bio">Bio:</label>
+        <br>
+        <textarea name="Bio" id="Bio" rows="5" cols="50"></textarea>
+    </div>
+    <div>
+        <button>Submit</button>
+    </div>
+    </form>
+</body>
+
+</html>
